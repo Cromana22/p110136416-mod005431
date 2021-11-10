@@ -1,27 +1,23 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-
-import AppHeader from './AppHeader'
-import AppPageTitle from './AppPageTitle'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AppLayout from './AppLayout'
 import AppHomepage from './AppHomepage'
 import AppBlog from './AppBlog'
 import AppRecipeList from './AppRecipeList'
-import AppFooter from './AppFooter'
 
 function App() {
   return (
     <div className="App">
-      <AppHeader />
-      <AppPageTitle />
-      <AppHomepage />
-      <AppBlog />
-      <AppRecipeList />
-      <AppFooter />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<AppLayout />} >
+            <Route path="home" element={<AppHomepage/>} />
+            <Route path="blog" element={<AppBlog/>} />
+            <Route path="recipes" element={<AppRecipeList/>} />
+            <Route path="*" element={<AppHomepage/>} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
