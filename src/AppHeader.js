@@ -14,7 +14,6 @@ function AppHeader() {
             <li><Link to="/home">Home</Link></li>
             <li><Link to="/blog">Blog</Link></li>
             <li><Link to="/recipes">Recipes</Link></li>
-            <li><Link to="/nothing-here">Nothing Here</Link></li>
           </ul>
         </nav>
       </div>
