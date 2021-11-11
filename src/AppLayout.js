@@ -8,7 +8,7 @@ function AppLayout() {
     return (
       <div className="AppLayout">
         <AppHeader />
-        <AppPageTitle />
+        <AppPageTitle name="test" />
         <Outlet />
         <AppFooter />
       </div>

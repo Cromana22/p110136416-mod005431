@@ -1,9 +1,11 @@
 import React from 'react';
 
-function AppPageTitle() {
+function AppPageTitle(props) {
+  const { name } = props
+
     return (
       <div className="AppPageTitle">
-        <p>This is the page title</p>
+        <h2>{name}</h2>
       </div>
     )
   }
