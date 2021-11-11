@@ -27,7 +27,7 @@ function AppFooter() {
             </div>
           </div>
 
-          <div class="row footer-copyright hide-on-med-and-up center-align">
+          <div class="row footer-copyright hide-on-med-and-up center-align" name="small footer">
             <div class="col s12">
               <br />
               <a class="white-text" href="www.facebook.com"><i class="fa fa-facebook-official"></i>&nbsp;&nbsp;</a>
@@ -40,7 +40,7 @@ function AppFooter() {
             </div>
           </div>
 
-          <div class="row footer-copyright hide-on-small-only">
+          <div class="row footer-copyright hide-on-small-only" name="medium footer">
             <div class="col m4">
               © 2021 Copyright Text
             </div>
