@@ -5,7 +5,7 @@ function AppHeader() {
     return (
       <div className="AppHeader">
         <section>
-          <img src="logo.png" alt="Logo" />
+          <a href="/home"><img src="logo.png" alt="Logo" /></a>
           <h1>Get Baking!</h1>
         </section>
        
