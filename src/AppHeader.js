@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 function AppHeader() {
     return (
       <div className="AppHeader">
-        <section>
-          <a href="/home"><img src="logo.png" alt="Logo" /></a>
-          <h1>Get Baking!</h1>
+        <section class="valign-wrapper row">
+          <div class="container col s4"><a class="left" href="/home"><img src="logo.png" alt="Logo" /></a></div>
+          <div class="container col s4"><h1 class="center-align">Get Baking!</h1></div>
+          <div class="container col s4"></div>
         </section>
        
         <nav>
