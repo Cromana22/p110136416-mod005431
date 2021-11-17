@@ -12,6 +12,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<AppLayout />} >
+            <Route path="" element={<AppHomepage/>} />
             <Route path="home" element={<AppHomepage/>} />
             <Route path="blog" element={<AppBlog/>} >
               <Route path="blog1" element={<BlogMain entry="blog1" />} />
