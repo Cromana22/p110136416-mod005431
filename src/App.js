@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppLayout from './AppLayout'
 import AppHomepage from './AppHomepage'
 import AppBlog from './AppBlog'
-import AppRecipeList from './AppRecipeList'
+import AppRecipes from './AppRecipes'
 import BlogMain from "./BlogMain";
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
               <Route path="blog3" element={<BlogMain entry="blog3" />} />
               <Route path="blog4" element={<BlogMain entry="blog4" />} />
             </Route>
-            <Route path="recipes" element={<AppRecipeList/>} />
+            <Route path="recipes" element={<AppRecipes/>} />
             <Route path="*" element={<AppHomepage />} />
           </Route>
         </Routes>
