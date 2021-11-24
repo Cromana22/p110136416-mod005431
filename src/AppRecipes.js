@@ -1,13 +1,14 @@
 import React from 'react';
 import AppPageTitle from './AppPageTitle';
-import RecipeGrid from './RecipeGrid';
+import { Link, Outlet } from "react-router-dom";
 
 function AppRecipes() {
     return (
       <div className="AppRecipeList">
         <AppPageTitle title="Find Great Recipes" />
         <p>Search fields</p>
-        <RecipeGrid cards={3} />
+        <Link to="addRecipe">Contribute a recipe</Link>
+        <Outlet />
       </div>
     )
   }

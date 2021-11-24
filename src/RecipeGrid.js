@@ -3,9 +3,10 @@ import RecipeCard from './RecipeCard';
 
 function RecipeGrid(props)
 {
+  const { cards } = props
   let cardlist = [];
 
-  for (let index = 0; index < props.cards; index++) //props is an object, cards is one of the values
+  for (let index = 0; index < cards; index++) //props is an object, cards is one of the values
   {
     cardlist.push( <RecipeCard key={index} /> );
   };
