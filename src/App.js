@@ -3,8 +3,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppLayout from './AppLayout'
 import AppHomepage from './AppHomepage'
 import AppBlog from './AppBlog'
-import AppRecipeList from './AppRecipeList'
+import AppRecipes from './AppRecipes'
 import BlogMain from "./BlogMain";
+import RecipeAdd from "./RecipeAdd";
+import RecipeGrid from './RecipeGrid';
 
 function App() {
   return (
@@ -20,7 +22,10 @@ function App() {
               <Route path="blog3" element={<BlogMain entry="blog3" />} />
               <Route path="blog4" element={<BlogMain entry="blog4" />} />
             </Route>
-            <Route path="recipes" element={<AppRecipeList/>} />
+            <Route path="recipes" element={<AppRecipes/>} >
+              <Route path="addRecipe" element={<RecipeAdd />} />
+              <Route path="" element={<RecipeGrid cards={3} />} />
+            </Route>
             <Route path="*" element={<AppHomepage />} />
           </Route>
         </Routes>
