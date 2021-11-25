@@ -10,7 +10,7 @@ import RecipeGrid from './RecipeGrid';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App pink accent-1">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<AppLayout />} >
