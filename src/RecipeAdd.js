@@ -55,7 +55,6 @@ function RecipeAdd()
                     <input class="file-path validate" type="text"></input>
                   </div>
                 </div>
-                Image: <input type="file" name="image"></input>
               </CollapsibleItem>
 
               <CollapsibleItem expanded={false} header="Ingredients" node="div">
