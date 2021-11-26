@@ -1,11 +1,13 @@
 import React from 'react';
+import './AppPageTitle.css';
+
 
 function AppPageTitle(props) {
   const { title } = props
 
     return (
-      <div className="AppPageTitle">
-        <h2>{title}</h2>
+      <div className="AppPageTitle yellow-text text-accent-1">
+        <h5>{title}</h5>
       </div>
     )
   }

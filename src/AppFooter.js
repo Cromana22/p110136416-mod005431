@@ -3,7 +3,7 @@ import React from 'react';
 function AppFooter() {
     return (
       <div className="AppFooter">
-        <footer className="page-footer">
+        <footer className="page-footer pink accent-1 yellow-text text-accent-1">
           <div className="row">
             <div className="container col m4 s12">
               <address>

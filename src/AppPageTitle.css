@@ -3,7 +3,7 @@
   src: url('AmazingMother.woff') format('woff');
   }
   
-.AppHeader {
+.AppPageTitle {
   text-align: center;
   font-family: 'AmazingMother', 'Times New Roman';
 }

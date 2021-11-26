@@ -6,11 +6,10 @@ import AppBlog from './AppBlog'
 import AppRecipes from './AppRecipes'
 import BlogMain from "./BlogMain";
 import RecipeAdd from "./RecipeAdd";
-import RecipeGrid from './RecipeGrid';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App pink accent-1">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<AppLayout />} >
@@ -22,10 +21,8 @@ function App() {
               <Route path="blog3" element={<BlogMain entry="blog3" />} />
               <Route path="blog4" element={<BlogMain entry="blog4" />} />
             </Route>
-            <Route path="recipes" element={<AppRecipes/>} >
-              <Route path="addRecipe" element={<RecipeAdd />} />
-              <Route path="" element={<RecipeGrid cards={3} />} />
-            </Route>
+            <Route path="recipes/addRecipe" element={<RecipeAdd />} />
+            <Route path="recipes" element={<AppRecipes/>} />
             <Route path="*" element={<AppHomepage />} />
           </Route>
         </Routes>
