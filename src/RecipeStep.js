@@ -3,11 +3,14 @@ import React from 'react';
 function RecipeStep(props)
 {
   const { number } = props
+  const name = "step"+number
+  const placeholder = "Step "+number
 
   return (
-    <>
-      {number}.<input type="text"></input>
-    </>
+    <div className="input-field center-align">
+      <label for={name} className="active">{number}. </label>
+      <input type="text" name={name} placeholder={placeholder}></input>
+    </div>
   )
 }
   

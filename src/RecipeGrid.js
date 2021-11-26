@@ -15,7 +15,9 @@ function RecipeGrid(props)
 
   return (
     <div className="RecipeGrid">
-    {cardlist}
+      <div className="row">
+        {cardlist}
+      </div>
     </div>
   )
 }

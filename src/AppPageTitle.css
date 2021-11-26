@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'AmazingMother';
+  src: url('AmazingMother.woff') format('woff');
+  }
+  
+.AppPageTitle {
+  text-align: center;
+  font-family: 'AmazingMother', 'Times New Roman';
+}
