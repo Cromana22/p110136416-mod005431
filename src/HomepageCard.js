@@ -1,7 +1,7 @@
 import React from "react";
 import image from "./images/cupcake.png";
 
-function BlogCard(props) {
+function HomepageCard(props) {
 
     let { blogs } = props
     
@@ -42,4 +42,4 @@ function BlogCard(props) {
     )
 }
     
-export default BlogCard
+export default HomepageCard

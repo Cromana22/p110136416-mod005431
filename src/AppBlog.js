@@ -1,26 +1,32 @@
 import React from 'react';
 import AppPageTitle from './AppPageTitle'
-import {blogLinks} from "./scripts/blogLinks.js";
+import useFetch from './scripts/useFetch.js';
+import BlogLinks from './BlogLinks';
+import { Outlet } from 'react-router';
 
 function AppBlog() {
-    return (
-      <div className="AppBlog">
-        <AppPageTitle title="Get Baking Blog" />
-        <div className="pink lighten-4 deep-purple-text row">
+  const { response, loading, error } = useFetch("https://p110136416-6.free.beeceptor.com/blogs");
+  
+  return (
+    <div className="AppBlog">
+      <AppPageTitle title="Get Baking Blog" />
+      <div className="pink lighten-4 deep-purple-text row">
 
-          <div className="col s12 m3">
-            <ul id="blogLinks">
-                <script src={blogLinks}></script>
-            </ul>
-          </div>
-
-          <div className="col s12 m9">
-            <p className="flow-text left-align">asdfas</p>
-          </div>
-
+        <div className="col s12 m3">
+          <ul>
+            { loading && <p>{loading}</p> } {/* if loading, output loading */}
+            { error && <p>{error}</p> } {/* if error, output error */}
+            { response && <BlogLinks blogs={response} /> } {/* if loaded, put data into Bloglist as a prop */}
+          </ul>
         </div>
+
+        <div className="col s12 m9">
+          <Outlet />
+        </div>
+
       </div>
-    )
+    </div>
+  )
   }
   
   export default AppBlog
