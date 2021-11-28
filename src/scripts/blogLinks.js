@@ -13,14 +13,14 @@ window.onload = () => {
             data.forEach(blog =>
             {
                 const li = document.createElement('li');
-
                 const link = document.createElement('a');
                 link.setAttribute('href', "/blog?id="+blog.id);
-                link.textContent = blog.date + ": "+blog.title;
+
+                link.textContent = blog.title;
+
                 ul.appendChild(li);
                 li.appendChild(link);
-                console.log(link);
-            })
+            });
         } 
         else
         {
