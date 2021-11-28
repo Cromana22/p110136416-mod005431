@@ -1,8 +1,11 @@
 import React from 'react';
 import AppPageTitle from './AppPageTitle'
-import script from './scripts/homepageCards.js';
+import useFetch from './scripts/useFetch.js';
+import BlogCard from './BlogCard';
 
 function AppHomepage() {
+  const { response, loading, error } = useFetch("https://p110136416-6.free.beeceptor.com/blogs");
+  console.log(response);
   return (
     <div className="AppHomepage">
       <AppPageTitle title="Welcome to Get Baking!" />
@@ -14,7 +17,9 @@ function AppHomepage() {
         <br />
 
         <div id="cardRow" className="container row">
-          <script src={script}></script>
+          { loading && <p>{loading}</p> } {/* if loading, output loading */}
+          { error && <p>{error}</p> } {/* if error, output error */}
+          { response && <BlogCard blogs={response} /> } {/* if loaded, put data into Bloglist as a prop */}
         </div>
 
       </div>
