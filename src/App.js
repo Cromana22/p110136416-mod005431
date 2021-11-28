@@ -16,10 +16,7 @@ function App() {
             <Route path="" element={<AppHomepage/>} />
             <Route path="home" element={<AppHomepage/>} />
             <Route path="blog" element={<AppBlog/>} >
-              <Route path="blog1" element={<BlogMain entry="blog1" />} />
-              <Route path="blog2" element={<BlogMain entry="blog2" />} />
-              <Route path="blog3" element={<BlogMain entry="blog3" />} />
-              <Route path="blog4" element={<BlogMain entry="blog4" />} />
+              <Route path=":id" element={<BlogMain />} />
             </Route>
             <Route path="recipes/addRecipe" element={<RecipeAdd />} />
             <Route path="recipes" element={<AppRecipes/>} />

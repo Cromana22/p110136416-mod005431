@@ -11,8 +11,6 @@ function RecipeGrid(props)
     cardlist.push( <RecipeCard key={index} /> );
   };
 
-  console.log(cardlist);
-
   return (
     <div className="RecipeGrid">
       <div className="row">

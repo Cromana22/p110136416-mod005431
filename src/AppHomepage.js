@@ -1,45 +1,30 @@
 import React from 'react';
 import AppPageTitle from './AppPageTitle'
+import useFetch from './scripts/useFetch.js';
+import HomepageCard from './HomepageCard';
 
 function AppHomepage() {
-    return (
-      <div className="AppHomepage">
-        <AppPageTitle title="Welcome to Get Baking!" />
-        <div className="pink lighten-4 deep-purple-text">
-          <br />
-          <p className="container center-align">Welcome to Get Baking! We are a collection of like minded people who love baking and want to encourage more people to bake at home.</p>
-          <p className="container center-align">Thank you for joining us on this great adventure and we hope you have a tasty time!</p>
-          <br />
+  const { response, loading, error } = useFetch("https://p110136416-6.free.beeceptor.com/blogs");
 
-          <div className="container row">
-            <div className="col s12 m4">
-              <div class="card medium hoverable yellow lighten-4">
-                <div class="card-content deep-purple-text">
-                <span class="card-title">Blog Title</span>
-                <p>See our latest blog here</p></div>
-              </div>
-            </div>
+  return (
+    <div className="AppHomepage">
+      <AppPageTitle title="Welcome to Get Baking!" />
+      <div className="pink lighten-4 deep-purple-text">
 
-            <div className="col s12 m4">
-              <div class="card medium hoverable yellow lighten-4">
-                <div class="card-content deep-purple-text">
-                <span class="card-title">Blog Title</span>
-                <p>See our latest blog here</p></div>
-              </div>
-            </div>
+        <br />
+        <p className="container center-align">Welcome to Get Baking! We are a collection of like minded people who love baking and want to encourage more people to bake at home.</p>
+        <p className="container center-align">Thank you for joining us on this great adventure and we hope you have a tasty time!</p>
+        <br />
 
-            <div className="col s12 m4">
-              <div class="card medium hoverable yellow lighten-4">
-                <div class="card-content deep-purple-text">
-                <span class="card-title">Blog Title</span>
-                <p>See our latest blog here</p></div>
-              </div>
-            </div>
-          </div>
-
+        <div id="cardRow" className="container row">
+          { loading && <p>{loading}</p> } {/* if loading, output loading */}
+          { error && <p>{error}</p> } {/* if error, output error */}
+          { response && <HomepageCard blogs={response} /> } {/* if loaded, put data into Bloglist as a prop */}
         </div>
+
       </div>
-    )
-  }
+    </div>
+  )
+}
   
-  export default AppHomepage
+export default AppHomepage
