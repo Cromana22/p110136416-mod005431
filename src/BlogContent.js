@@ -14,7 +14,7 @@ function BlogContent(props) {
 
   return (
     <>
-      <p>{entry}</p>
+      <p className="flow-text">{entry}</p>
     </>
   )
 }

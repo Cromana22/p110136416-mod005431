@@ -1,5 +1,6 @@
 import React from "react";
 import image from "./images/cupcake.png";
+import { Link } from "react-router-dom";
 
 function HomepageCard(props) {
 
@@ -29,13 +30,15 @@ function HomepageCard(props) {
     <div>
         {blogs.map((blog) => (
             <div className="col s12 m4" key={blog.id}>
-                <div className="card medium hoverable yellow lighten-4">
-                    <div className="card-content deep-purple-text">
-                        <div className="card-title"><strong>{blog.title}</strong></div>
-                        <div className="center-align"><img src={image} alt="" width="100px" /></div>
-                        <p>{blog.content.substring(0,200)}...</p>
+                <Link to={"/blog/"+blog.id}>
+                    <div className="card medium hoverable yellow lighten-4">
+                        <div className="card-content deep-purple-text">
+                            <div className="card-title"><strong>{blog.title}</strong></div>
+                            <div className="center-align"><img src={image} alt="" width="100px" /></div>
+                            <p>{blog.content.substring(0,200)}...</p>
+                        </div>
                     </div>
-                </div>
+                </Link>
             </div>
         ))}
     </div>

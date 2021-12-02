@@ -6,6 +6,7 @@ import AppBlog from './AppBlog'
 import AppRecipes from './AppRecipes'
 import BlogMain from "./BlogMain";
 import RecipeAdd from "./RecipeAdd";
+import RecipeSuccess from "./RecipeSuccess";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
               <Route path=":id" element={<BlogMain />} />
             </Route>
             <Route path="recipes/addRecipe" element={<RecipeAdd />} />
+            <Route path="recipes/recipe-success" element={<RecipeSuccess />} />
             <Route path="recipes" element={<AppRecipes/>} />
             <Route path="*" element={<AppHomepage />} />
           </Route>
