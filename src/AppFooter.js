@@ -50,10 +50,10 @@ function AppFooter() {
             </div>
 
             <div className="col m8 right-align">
-              <a className="white-text" href="www.facebook.com"><i className="fa fa-facebook-official"></i>&nbsp;&nbsp;Facebook&nbsp;&nbsp;</a>
-              <a className="white-text" href="www.pinterest.com"><i className="fa fa-pinterest-p"></i>&nbsp;&nbsp;Pinterest&nbsp;&nbsp;</a>
-              <a className="white-text" href="www.twitter.com"><i className="fa fa-twitter"></i>&nbsp;&nbsp;Twitter&nbsp;&nbsp;</a>
-              <a className="white-text" href="www.flickr.com"><i className="fa fa-flickr"></i>&nbsp;&nbsp;Flickr&nbsp;&nbsp;</a>
+              <a className="white-text" href="https://www.facebook.com"><i className="fa fa-facebook-official"></i>&nbsp;&nbsp;Facebook&nbsp;&nbsp;</a>
+              <a className="white-text" href="https://www.pinterest.com"><i className="fa fa-pinterest-p"></i>&nbsp;&nbsp;Pinterest&nbsp;&nbsp;</a>
+              <a className="white-text" href="https://www.twitter.com"><i className="fa fa-twitter"></i>&nbsp;&nbsp;Twitter&nbsp;&nbsp;</a>
+              <a className="white-text" href="https://www.flickr.com"><i className="fa fa-flickr"></i>&nbsp;&nbsp;Flickr&nbsp;&nbsp;</a>
             </div>
           </div>
         </footer>
