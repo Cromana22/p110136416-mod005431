@@ -3,17 +3,17 @@ import RecipeCard from './RecipeCard';
 
 function RecipeGrid(props)
 {
-  const { cards } = props
+  const { recipes } = props;
   let cardlist = [];
 
-  for (let index = 0; index < cards; index++) //props is an object, cards is one of the values
+  recipes.forEach(card =>
   {
-    cardlist.push( <RecipeCard key={index} /> );
-  };
-
+    cardlist.push( <RecipeCard key={card.id} cardId={card.id} name={card.name} image={card.image} descript={card.description} /> );
+  })
+ 
   return (
     <div className="RecipeGrid">
-      <div className="row">
+      <div className="container row">
         {cardlist}
       </div>
     </div>

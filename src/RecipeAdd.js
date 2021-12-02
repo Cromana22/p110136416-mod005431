@@ -3,7 +3,7 @@ import { useState } from 'react/cjs/react.development';
 import RecipeIngredient from './RecipeIngredient';
 import RecipeStep from './RecipeStep';
 import 'materialize-css';
-import {Collapsible, CollapsibleItem } from 'react-materialize';
+import {Collapsible, CollapsibleItem, Icon } from 'react-materialize';
 import AppPageTitle from './AppPageTitle';
 
 function RecipeAdd()
@@ -37,9 +37,9 @@ function RecipeAdd()
       <div className="pink lighten-4 deep-purple-text">
         <div className="container">
           <br />
-          <form method="POST">
+          <form action="./recipe-success">
             <Collapsible className="yellow lighten-4 deep-purple-text">
-              <CollapsibleItem expanded={true} header="Main Details" node="div">
+              <CollapsibleItem expanded={true} header="Main Details" node="div" icon={<Icon>expand_more</Icon>}>
                 Name: <input type="text" name="name"></input>
                 Description: <input type="text" name="description"></input>
                 Contributed By: <input type="text" name="contributor"></input>
@@ -57,7 +57,7 @@ function RecipeAdd()
                 </div>
               </CollapsibleItem>
 
-              <CollapsibleItem expanded={false} header="Ingredients" node="div">
+              <CollapsibleItem expanded={false} header="Ingredients" node="div" icon={<Icon>expand_more</Icon>}>
                 {iList}
                 <div className="center-align">
                   <button type="button" className="waves-effect waves-light btn deep-purple accent-1" onClick={ingPlus1}>
@@ -66,7 +66,7 @@ function RecipeAdd()
                 </div>
               </CollapsibleItem>
 
-              <CollapsibleItem expanded={false} header="Steps" node="div">
+              <CollapsibleItem expanded={false} header="Steps" node="div" icon={<Icon>expand_more</Icon>}>
                 {sList}
                 <div className="center-align">
                   <button type="button" className="waves-effect waves-light btn deep-purple accent-1" onClick={stepPlus1}>
@@ -77,8 +77,8 @@ function RecipeAdd()
             </Collapsible>
 
             <div className="center-align">
-              <button class="btn waves-effect waves-light deep-purple accent-1" type="submit" name="action">Submit
-                <i class="material-icons right">send</i>
+              <button className="btn waves-effect waves-light deep-purple accent-1" type="submit" name="action">Submit
+                <i className="material-icons right">send</i>
               </button>
             </div>
           </form>

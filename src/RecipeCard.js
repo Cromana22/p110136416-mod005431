@@ -1,19 +1,24 @@
 import React from 'react';
-import image from './images/cupcake.png';
+import { Link } from 'react-router-dom';
 
-function RecipeCard()
+function RecipeCard(props)
 {
+  const { cardId, name, image, descript } = props;
+  let cardlink = "./"+cardId;
+
   return (
-    <div className="RecipeCard col s12 m2">
-      <div class="card medium hoverable yellow lighten-4">
-        <div class="card-image">
-          <img className="centre-align" src={image} alt="alt text"/>
+    <div className="RecipeCard col s12 m3">
+      <Link to={cardlink}>
+        <div className="card small hoverable yellow lighten-4 deep-purple-text">
+          <div className="card-image">
+            <img className="centre-align" src={image} alt="alt text" width="100px" />
+          </div>
+          <div className="card-content">
+            <span className="card-title"><strong>{name}</strong></span>
+            <p>{descript.substring(0,50)}...</p>
+          </div>
         </div>
-        <div class="card-title center-align">Recipe Name</div>
-        <div class="card-content deep-purple-text">
-          <p>Recipe description</p>
-        </div>
-      </div>
+      </Link>
     </div>
   )
 }
