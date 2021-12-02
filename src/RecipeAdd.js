@@ -43,6 +43,7 @@ function RecipeAdd()
                 Name: <input type="text" name="name"></input>
                 Description: <input type="text" name="description"></input>
                 Contributed By: <input type="text" name="contributor"></input>
+                Socials: <input type="text" name="website"></input>
                 Prep Time: <input type="text" name="prepTime"></input>
                 Cook Time: <input type="text" name="cookTime"></input>
                 Servings: <input type="number" name="servings"></input>

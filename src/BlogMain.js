@@ -6,7 +6,6 @@ import BlogContent from './BlogContent';
 function BlogMain() {
   const { response, loading, error } = useFetch("https://p110136416-6.free.beeceptor.com/blogs");
   let {id} = useParams();
-  console.log(id);
 
   return (
     <div className="BlogMain col s12 m9">

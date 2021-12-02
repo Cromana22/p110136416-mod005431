@@ -1,6 +1,13 @@
 .right-border
 {
-    border-width: 2px;
+    border-width: 1px;
     border-right-style: solid;
+    border-color: #b39ddb;
+}
+
+.left-border
+{
+    border-width: 1px;
+    border-left-style: solid;
     border-color: #b39ddb;
 }
