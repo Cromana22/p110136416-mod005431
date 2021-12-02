@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function AppFooter() {
     return (
-      <div className="AppFooter">
+      <div className="AppFooter" id="no-print">
         <footer className="page-footer pink accent-1 yellow-text text-accent-1">
           <div className="row">
             <div className="container col m4 s12">
@@ -22,8 +23,11 @@ function AppFooter() {
                 <br />Press: pr@getbaking.com
               </address>  
             </div>
-            <div className="container col m4 s12">
-              Something else here
+            <div className="container col m4 hide-on-small-only">
+              <b>Site Links</b>
+              <br /><Link to="/home" className="yellow-text text-accent-1">Home</Link>
+              <br /><Link to="/blog" className="yellow-text text-accent-1">Blog</Link>
+              <br /><Link to="/recipes" className="yellow-text text-accent-1">Recipes</Link>
             </div>
           </div>
 

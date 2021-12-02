@@ -1,5 +1,4 @@
 import React from "react";
-import image from "./images/cupcake.png";
 import { Link } from "react-router-dom";
 
 function HomepageCard(props) {
@@ -25,17 +24,22 @@ function HomepageCard(props) {
     }
 
     blogs = shuffle(blogs);
+    
+    let selection = [];
+    selection[0] = blogs[0];
+    selection[1] = blogs[1];
+    selection[2] = blogs[2];
 
     return (
     <div>
-        {blogs.map((blog) => (
+        {selection.map((blog) => (
             <div className="col s12 m4" key={blog.id}>
                 <Link to={"/blog/"+blog.id}>
                     <div className="card medium hoverable yellow lighten-4">
                         <div className="card-content deep-purple-text">
                             <div className="card-title"><strong>{blog.title}</strong></div>
-                            <div className="center-align"><img src={image} alt="" width="100px" /></div>
-                            <p>{blog.content.substring(0,200)}...</p>
+                            <div className="center-align"><img src={blog.image} alt="" className="responsive-img" /></div>
+                            <p>{blog.content.substring(0,150)}...</p>
                         </div>
                     </div>
                 </Link>

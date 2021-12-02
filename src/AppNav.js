@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function AppNav() {
     return (
-      <div className="AppNav deep-purple-text">
+      <div className="AppNav deep-purple-text" id="no-print">
         <nav className="yellow accent-1">
           <ul>
             <strong>
