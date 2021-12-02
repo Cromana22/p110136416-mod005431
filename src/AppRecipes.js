@@ -5,9 +5,42 @@ import RecipeGrid from './RecipeGrid';
 import useFetch from './scripts/useFetch.js';
 import './AppRecipes.css';
 import {Collapsible, CollapsibleItem, Icon } from 'react-materialize';
+import { useState } from 'react/cjs/react.development';
 
 function AppRecipes() {
-  const { response, loading, error } = useFetch("https://p110136416-2.free.beeceptor.com/recipes");
+  let { response, loading, error } = useFetch("https://p110136416-4.free.beeceptor.com/recipes");
+  const [state, setState] = useState(
+    {
+      rname: "",
+      author: "",
+      preptime: 120,
+      cooktime: 120,
+      difficulty: "",
+      ingredients: ""
+    }
+  );
+
+  function search(item)
+  {
+    if (item.name.includes(state.rname) &&
+      item.author.includes(state.author) &&
+      item.preptime < state.preptime+1 &&
+      item.cooktime < state.cooktime+1 &&
+      item.difficulty.includes(state.difficulty) &&
+      item.ingredients.some(ingredient => ingredient.name.includes(state.ingredients))
+      )
+    { return true }
+    return false;
+  }
+
+  function handleChange(evt)
+  {
+    const value = evt.target.value;
+    setState({
+      ...state,
+      [evt.target.name]: value
+    });
+  }
 
     return (
       <div className="AppRecipeList">
@@ -21,53 +54,37 @@ function AppRecipes() {
 
           <Collapsible className="pink lighten-5 deep-purple-text">
               <CollapsibleItem expanded={false} header="Search" node="div" icon={<Icon>search</Icon>}>
-                <form>
-                  <div className="row valign-wrapper">
-                    <div className="col s12 m3">Name: 
-                      <div className="input-field inline"><input type="text" name="name"></input></div>
+                <form id="searchfields">
+                  <div className="row">
+                    <div className="col s12 m3"><label className="label">Name</label> 
+                      <div className="input-field "><input type="text" name="rname" value={state.rname} onChange={handleChange}></input></div>
                     </div>
 
-                    <div className="col s12 m3">Author: 
-                      <div className="input-field inline"><input type="text" name="author"></input></div>
+                    <div className="col s12 m3"><label className="label">Author</label> 
+                      <div className="input-field"><input type="text" name="author" value={state.author} onChange={handleChange}></input></div>
                     </div>
 
-                    <div className="col s12 m3">Prep Time (mins): 
-                      <div className="input-field inline"><input type="number" name="preptime"></input></div>
-                    </div>
-
-                    <div className="col s12 m3">Cook Time (mins): 
-                      <div className="input-field inline"><input type="number" name="cooktime"></input></div>
-                    </div>
-                  </div>
-
-                  <div className="row valign-wrapper">
-                    <div className="col s12 m3">Difficulty: 
-                      <div className="input-field inline">
-                        <select name="difficulty" className="browser-default pink lighten-5 deep-purple-text" defaultValue="">
+                    <div className="col s12 m3"><label className="label">Difficulty</label> 
+                      <div className="input-field">
+                        <select name="difficulty" className="browser-default pink lighten-5 deep-purple-text" value={state.difficulty} onChange={handleChange}>
                           <option value="">Any</option>
-                          <option value="easy">Easy</option>
-                          <option value="medium">Medium</option>
-                          <option value="hard">Hard</option>
+                          <option value="Easy">Easy</option>
+                          <option value="Medium">Medium</option>
+                          <option value="Hard">Hard</option>
                         </select>
                       </div>
                     </div>
 
-                    <div className="col s12 m3">Ingredients: 
-                      <div className="input-field inline">
-                        <select name="ingredients" className="browser-default pink lighten-5 deep-purple-text" defaultValue="">
+                    <div className="col s12 m3"><label className="label">Ingredients</label> 
+                      <div className="input-field">
+                        <select name="ingredients" className="browser-default pink lighten-5 deep-purple-text" value={state.ingredients} onChange={handleChange}>
                           <option value="">Any</option>
-                          <option value="Meat">Meat</option>
+                          <option value="chicken">Meat</option>
                           <option value="Fish">Fish</option>
                           <option value="Vegetable">Vegetable</option>
                           <option value="Fruit">Fruit</option>
                         </select>
                       </div>
-                    </div>
-
-                    <div className="col s12 m3">
-                      <button className="btn waves-effect waves-light deep-purple accent-1" type="submit" name="action">Search
-                        <i className="material-icons right">search</i>
-                      </button>
                     </div>
                   </div>
                 </form>
@@ -77,7 +94,7 @@ function AppRecipes() {
           <div> 
             { loading && <p>{loading}</p> } {/* if loading, output loading */}
             { error && <p>{error}</p> } {/* if error, output error */}
-            { response && <RecipeGrid recipes={response} /> } {/* if loaded, put data into recipe grid as a prop */}
+            { response && <RecipeGrid recipes={response.filter(search)} /> } {/* if loaded, put data into recipe grid as a prop */}
           </div>
 
         </div>

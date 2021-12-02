@@ -8,6 +8,7 @@ import BlogMain from "./BlogMain";
 import RecipeAdd from "./RecipeAdd";
 import RecipeSuccess from "./RecipeSuccess";
 import RecipeDetail from "./RecipeDetail";
+import './App.css';
 
 function App() {
   return (
