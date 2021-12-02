@@ -7,6 +7,7 @@ import AppRecipes from './AppRecipes'
 import BlogMain from "./BlogMain";
 import RecipeAdd from "./RecipeAdd";
 import RecipeSuccess from "./RecipeSuccess";
+import RecipeDetail from "./RecipeDetail";
 
 function App() {
   return (
@@ -19,9 +20,10 @@ function App() {
             <Route path="blog" element={<AppBlog/>} >
               <Route path=":id" element={<BlogMain />} />
             </Route>
-            <Route path="recipes/addRecipe" element={<RecipeAdd />} />
+            <Route path="recipes" element={<AppRecipes />} />
+            <Route path="recipes/addRecipe"element={<RecipeAdd />} />
             <Route path="recipes/recipe-success" element={<RecipeSuccess />} />
-            <Route path="recipes" element={<AppRecipes/>} />
+            <Route path="recipes/:id" element={<RecipeDetail />} />
             <Route path="*" element={<AppHomepage />} />
           </Route>
         </Routes>

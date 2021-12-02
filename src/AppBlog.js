@@ -20,7 +20,7 @@ function AppBlog() {
             { response && <BlogLinks blogs={response} /> } {/* if loaded, put data into Bloglist as a prop */}
           </ul>
         </div>
-        <div className="col s12 m9">
+        <div className="col s12 m9 left-border">
           <Outlet />
         </div>
 

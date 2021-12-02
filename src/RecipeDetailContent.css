@@ -1,0 +1,48 @@
+.right-border
+{
+    border-width: 1px;
+    border-right-style: solid;
+    border-color: #b39ddb;
+}
+
+.left-border
+{
+    border-width: 1px;
+    border-left-style: solid;
+    border-color: #b39ddb;
+}
+
+.pad-top
+{
+    padding-top: 15px;
+}
+
+.pad-bottom
+{
+    padding-bottom: 15px;
+}
+
+.pad-left
+{
+    padding-left: 15px;
+}
+
+.pad-right
+{
+    padding-right: 15px;
+}
+
+.lighter-text
+{
+    color: #b39ddb;
+}
+
+.top-margin
+{
+    margin-top: 15px;
+}
+
+.partial-top-margin
+{
+    margin-top: 5px;
+}
