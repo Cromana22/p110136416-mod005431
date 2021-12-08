@@ -79,9 +79,9 @@ function AppRecipes() {
                       <div className="input-field">
                         <select name="ingredients" className="browser-default pink lighten-5 deep-purple-text" value={state.ingredients} onChange={handleChange}>
                           <option value="">Any</option>
-                          <option value="Baking Powder"></option>
-                          <option value="Berries"></option>
-                          <option value="Box of Spice Cake Mix"></option>
+                          <option value="Baking Powder">Baking Powder</option>
+                          <option value="Berries">Berries</option>
+                          <option value="Box of Spice Cake Mix">Box of Spice Cake Mix</option>
                           <option value="Box of Vanilla Pudding Mix">Box of Vanilla Pudding Mix</option>
                           <option value="Butter">Butter</option>
                           <option value="Chocolate (chopped">Chocolate (chopped)</option>
