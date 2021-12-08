@@ -6,7 +6,6 @@ import AppBlog from './AppBlog'
 import AppRecipes from './AppRecipes'
 import BlogMain from "./BlogMain";
 import RecipeAdd from "./RecipeAdd";
-import RecipeSuccess from "./RecipeSuccess";
 import RecipeDetail from "./RecipeDetail";
 import './App.css';
 
@@ -23,7 +22,6 @@ function App() {
             </Route>
             <Route path="recipes" element={<AppRecipes />} />
             <Route path="recipes/addRecipe"element={<RecipeAdd />} />
-            <Route path="recipes/recipe-success" element={<RecipeSuccess />} />
             <Route path="recipes/:id" element={<RecipeDetail />} />
             <Route path="*" element={<AppHomepage />} />
           </Route>

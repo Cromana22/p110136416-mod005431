@@ -5,7 +5,7 @@ import BlogLinks from './BlogLinks';
 import { Outlet } from 'react-router';
 
 function AppBlog() {
-  const { response, loading, error } = useFetch("https://p110136416-4.free.beeceptor.com/blogs");
+  const { response, loading, error } = useFetch("https://p110136416-2.free.beeceptor.com/blogs");
   
   return (
     <div className="AppBlog">

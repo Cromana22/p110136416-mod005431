@@ -8,11 +8,11 @@ function AppFooter() {
           <div className="row">
             <div className="container col m4 s12">
               <address>
-                <b>Company Name</b>
-                <br />Address1
-                <br />Address2
-                <br />Town
-                <br />Postcode
+                <b>Get Baking</b>
+                <br />University Centre Peterborough
+                <br />Park Crescent
+                <br />Peterborough
+                <br />PE1 4DZ
               </address>
             </div>
             <div className="container col m4 s12">

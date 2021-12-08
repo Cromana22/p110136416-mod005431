@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './RecipeDetailContent.css';
 
 function RecipeDetailContent(props)
@@ -19,6 +20,7 @@ function RecipeDetailContent(props)
 
     recipes.forEach(recipe =>
     {
+        
         if (recipe.id === recipeId)
         {
             name = recipe.name;
@@ -47,6 +49,8 @@ function RecipeDetailContent(props)
                 <button className="btn small waves-effect waves-light deep-purple accent-1" type="button" name="print" onClick={() => window.print()}>Print
                         <i className="material-icons right">print</i>
                 </button>
+                <span> </span>
+                <Link to="/recipes" className="btn small waves-effect waves-light">Back</Link>
             </div>
 
             <div className="row"></div>
@@ -68,7 +72,7 @@ function RecipeDetailContent(props)
                     <h6 className="center-align lighter-text"><strong><u>Ingredients</u></strong></h6>
                     <ul list-style-type="none">
                         {ingredients.map((ingredient) => (
-                            <li key={ingredient.name}>{ingredient.name} - {ingredient.quantity} {ingredient.measure} </li>
+                            <li>{ingredient.name} - {ingredient.quantity} {ingredient.measure} </li>
                         ))}
                     </ul>
                 </div>
@@ -117,11 +121,11 @@ function RecipeDetailContent(props)
             <br />
             <div className="flow-text">
                 <h6><u>Steps</u></h6>
-                <ol list-style-type="none">
+                <ul list-style-type="none">
                     {steps.map((step) => (
-                        <li className="pad-left" key={step.number}>{step.step}</li>
+                        <li className="pad-left" key={step.number}>{step.number}.  {step.step}</li>
                     ))}
-                </ol>
+                </ul>
             </div>
         </div>
     </div>
