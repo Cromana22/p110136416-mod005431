@@ -9,12 +9,12 @@ function RecipeCard(props)
   return (
     <div className="RecipeCard col s12 m3">
       <Link to={cardlink}>
-        <div className="card small hoverable yellow lighten-4 deep-purple-text">
+        <div className="card medium  hoverable yellow lighten-4 deep-purple-text">
           <div className="card-image">
             <img className="centre-align" src={image} alt="alt text" width="100px" />
           </div>
           <div className="card-content">
-            <span className="card-title"><strong>{name}</strong></span>
+            <span className="card-title truncate"><strong>{name}</strong></span>
             <p>{descript.substring(0,50)}...</p>
           </div>
         </div>

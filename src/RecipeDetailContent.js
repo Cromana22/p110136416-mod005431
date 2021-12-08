@@ -74,11 +74,11 @@ function RecipeDetailContent(props)
                 </div>
                 <div className="col s8 left-border pad-left">
                     <h6 className="center-align lighter-text"><strong><u>Steps</u></strong></h6>
-                    <ul list-style-type="none">
+                    <ol>
                         {steps.map((step) => (
-                            <li className="pad-left" key={step.number}>{step.number}.  {step.step}</li>
+                            <li className="pad-left" key={step.number}>{step.step}</li>
                         ))}
-                    </ul>
+                    </ol>
                 </div>
             </div>
 
@@ -117,11 +117,11 @@ function RecipeDetailContent(props)
             <br />
             <div className="flow-text">
                 <h6><u>Steps</u></h6>
-                <ul list-style-type="none">
+                <ol list-style-type="none">
                     {steps.map((step) => (
-                        <li className="pad-left" key={step.number}>{step.number}.  {step.step}</li>
+                        <li className="pad-left" key={step.number}>{step.step}</li>
                     ))}
-                </ul>
+                </ol>
             </div>
         </div>
     </div>

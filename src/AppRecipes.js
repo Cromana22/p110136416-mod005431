@@ -8,13 +8,13 @@ import {Collapsible, CollapsibleItem, Icon } from 'react-materialize';
 import { useState } from 'react/cjs/react.development';
 
 function AppRecipes() {
-  let { response, loading, error } = useFetch("https://p110136416-4.free.beeceptor.com/recipes");
+  let { response, loading, error } = useFetch("https://p110136416-1.free.beeceptor.com/recipes");
   const [state, setState] = useState(
     {
       rname: "",
       author: "",
-      preptime: 120,
-      cooktime: 120,
+      preptime: 300,
+      cooktime: 300,
       difficulty: "",
       ingredients: ""
     }
@@ -79,10 +79,38 @@ function AppRecipes() {
                       <div className="input-field">
                         <select name="ingredients" className="browser-default pink lighten-5 deep-purple-text" value={state.ingredients} onChange={handleChange}>
                           <option value="">Any</option>
-                          <option value="chicken">Meat</option>
-                          <option value="Fish">Fish</option>
-                          <option value="Vegetable">Vegetable</option>
-                          <option value="Fruit">Fruit</option>
+                          <option value="Baking Powder"></option>
+                          <option value="Berries"></option>
+                          <option value="Box of Spice Cake Mix"></option>
+                          <option value="Box of Vanilla Pudding Mix">Box of Vanilla Pudding Mix</option>
+                          <option value="Butter">Butter</option>
+                          <option value="Chocolate (chopped">Chocolate (chopped)</option>
+                          <option value="Chocolate Chips">Chocolate Chips</option>
+                          <option value="Cocoa Powder">Cocoa Powder</option>
+                          <option value="Coffee Creamer">Coffee Creamer</option>
+                          <option value="Cream Cheese">Cream Cheese</option>
+                          <option value="Cream of Tartar">Cream of Tartar</option>
+                          <option value="Double Cream">Double Cream</option>
+                          <option value="Egg White">Egg White</option>
+                          <option value="Eggs">Eggs</option>
+                          <option value="Flour">Flour</option>
+                          <option value="Greek Yoghurt">Greek Yoghurt</option>
+                          <option value="Icing Sugar">Icing Sugar</option>
+                          <option value="Juice of a Blood Orange">Juice of a Blood Orange</option>
+                          <option value="Light Brown Sugar">Light Brown Sugar</option>
+                          <option value="Oil">Oil</option>
+                          <option value="Peanut Butter Chips">Peanut Butter Chips</option>
+                          <option value="Pumpkin Puree">Pumpkin Puree</option>
+                          <option value="Pumpkin Spice">Pumpkin Spice</option>
+                          <option value="Salt">Salt</option>
+                          <option value="Salted Peanuts">Salted Peanuts</option>
+                          <option value="Sour Cream">Sour Cream</option>
+                          <option value="Sugar">Sugar</option>
+                          <option value="Unsalted Peanuts">Unsalted Peanuts</option>
+                          <option value="Vanilla Extra">Vanilla Extra</option>
+                          <option value="Vanilla Extract">Vanilla Extract</option>
+                          <option value="White Almond Bark">White Almond Bark</option>
+                          <option value="White Sugar">White Sugar</option>
                         </select>
                       </div>
                     </div>

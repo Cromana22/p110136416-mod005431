@@ -12,13 +12,8 @@ function RecipeIngredient(props)
     <div className="center-align">
       {number}. 
       <div className="input-field inline">
-        <select name={ingName} className="browser-default yellow lighten-4 deep-purple-text" defaultValue="">
-          <option value="" disabled>Select an ingredient</option>
-          <option value="Meat">Meat</option>
-          <option value="Fish">Fish</option>
-          <option value="Vegetable">Vegetable</option>
-          <option value="Fruit">Fruit</option>
-        </select>
+        <label for={ingName} className="active">Ingredient</label>
+        <input type="text" name={ingName} placeholder="Ingredient" className="left-align"></input>
       </div>
         
       <div className="input-field inline">
@@ -29,9 +24,12 @@ function RecipeIngredient(props)
       <div className="input-field inline">
         <select name={measureName} className="browser-default yellow lighten-4 deep-purple-text" defaultValue="">
           <option value="" disabled>Select a measurement</option>
+          <option value="each">each</option>
           <option value="g">g</option>
           <option value="ml">ml</option>
-          <option value="each">each</option>
+          <option value="pinch">pinch</option>
+          <option value="tbsp">tbsp</option>
+          <option value="tsp">tsp</option>
         </select>
       </div>
 
