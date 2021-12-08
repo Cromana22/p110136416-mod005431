@@ -47,13 +47,13 @@ function RecipeAdd()
                 Prep Time: <input type="text" name="prepTime"></input>
                 Cook Time: <input type="text" name="cookTime"></input>
                 Servings: <input type="number" name="servings"></input>
-                <div class="file-field input-field">
-                  <div class="waves-effect waves-light btn deep-purple accent-1">
+                <div className="file-field input-field">
+                  <div className="waves-effect waves-light btn deep-purple accent-1">
                     <span>Image</span>
                     <input type="file"></input>
                   </div>
-                  <div class="file-path-wrapper">
-                    <input class="file-path validate" type="text"></input>
+                  <div className="file-path-wrapper">
+                    <input className="file-path validate" type="text"></input>
                   </div>
                 </div>
               </CollapsibleItem>
