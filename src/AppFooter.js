@@ -34,10 +34,10 @@ function AppFooter() {
           <div className="row footer-copyright hide-on-med-and-up center-align" name="small footer">
             <div className="col s12">
               <br />
-              <a className="white-text" href="www.facebook.com"><i className="fa fa-facebook-official"></i>&nbsp;&nbsp;</a>
-              <a className="white-text" href="www.pinterest.com"><i className="fa fa-pinterest-p"></i>&nbsp;&nbsp;</a>
-              <a className="white-text" href="www.twitter.com"><i className="fa fa-twitter"></i>&nbsp;&nbsp;</a>
-              <a className="white-text" href="www.flickr.com"><i className="fa fa-flickr"></i>&nbsp;&nbsp;</a>
+              <a className="white-text" href="https://www.facebook.com"><i className="fa fa-facebook-official"></i>&nbsp;&nbsp;</a>
+              <a className="white-text" href="https://www.pinterest.com"><i className="fa fa-pinterest-p"></i>&nbsp;&nbsp;</a>
+              <a className="white-text" href="https://www.twitter.com"><i className="fa fa-twitter"></i>&nbsp;&nbsp;</a>
+              <a className="white-text" href="https://www.flickr.com"><i className="fa fa-flickr"></i>&nbsp;&nbsp;</a>
               <br />
               <br />
               © 2021 Copyright Text
