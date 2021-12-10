@@ -4,7 +4,7 @@ import useFetch from './scripts/useFetch.js';
 import HomepageCard from './HomepageCard';
 
 function AppHomepage() {
-  const { response, loading, error } = useFetch("https://p110136416-2.free.beeceptor.com/blogs");
+  const { response, loading, error } = useFetch("https://p110136416-1.free.beeceptor.com/blogs");
 
   return (
     <div className="AppHomepage">

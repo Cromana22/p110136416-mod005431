@@ -4,7 +4,7 @@ import useFetch from './scripts/useFetch';
 import BlogContent from './BlogContent';
 
 function BlogMain() {
-  const { response, loading, error } = useFetch("https://p110136416-2.free.beeceptor.com/blogs");
+  const { response, loading, error } = useFetch("https://p110136416-1.free.beeceptor.com/blogs");
   let {id} = useParams();
 
   return (

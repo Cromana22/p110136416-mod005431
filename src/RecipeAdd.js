@@ -108,7 +108,7 @@ function RecipeAdd()
                 <CollapsibleItem expanded={false} header="Ingredients" node="div" icon={<Icon>expand_more</Icon>}>
                   {iList}
                   <div className="center-align">
-                    <button type="button" className="waves-effect waves-light btn deep-purple accent-1" onClick={ingPlus1}>
+                    <button type="button" className="waves-effect waves-light btn deep-purple accent-1" id="ingplus" onClick={ingPlus1}>
                       <i className="material-icons">add</i>
                     </button>
                   </div>
@@ -117,7 +117,7 @@ function RecipeAdd()
                 <CollapsibleItem expanded={false} header="Steps" node="div" icon={<Icon>expand_more</Icon>}>
                   {sList}
                   <div className="center-align">
-                    <button type="button" className="waves-effect waves-light btn deep-purple accent-1" onClick={stepPlus1}>
+                    <button type="button" className="waves-effect waves-light btn deep-purple accent-1" id="stepplus" onClick={stepPlus1}>
                       <i className="material-icons">add</i>
                     </button>
                   </div>

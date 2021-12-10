@@ -5,7 +5,7 @@ import RecipeDetailContent from './RecipeDetailContent';
 
 function RecipeDetail()
 {
-    const { response, loading, error } = useFetch("https://p110136416-2.free.beeceptor.com/recipes");
+    const { response, loading, error } = useFetch("https://p110136416-1.free.beeceptor.com/recipes");
     let {id} = useParams();
 
   return (
