@@ -8,7 +8,7 @@ import {Collapsible, CollapsibleItem, Icon } from 'react-materialize';
 import { useState } from 'react/cjs/react.development';
 
 function AppRecipes() {
-  let { response, loading, error } = useFetch("https://p110136416-1.free.beeceptor.com/recipes");
+  let { response, loading, error } = useFetch("https://p110136416-2.free.beeceptor.com/recipes");
   const [state, setState] = useState(
     {
       rname: "",
