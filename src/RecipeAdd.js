@@ -142,7 +142,7 @@ function RecipeAdd()
       <div name="RecipeSuccess">
         <div className="deep-purple-text container">
           <div className="row"></div>
-          <div className="pink lighten-4 deep-purple-text tall valign-wrapper">
+          <div className="pink lighten-4 deep-purple-text tall valign-wrapper" id="no-print">
             <p className="row container center-align"><br /><strong>Thank you for your submission!<br />
             Your recipe will be listed following our review and approval process.</strong><br /></p>
           </div>
