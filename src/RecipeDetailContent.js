@@ -55,20 +55,20 @@ function RecipeDetailContent(props)
 
             <div className="row"></div>
 
-            <div className="row valign-wrapper pad-top pad-bottom pink lighten-5">
-                <div className="col s4"><img className="responsive-img left-align" src={image} alt="Recipe result." /></div>
-                <p className="col s8 flow-text">{description}</p>
+            <div className="row pad-top pad-bottom pink lighten-5">
+                <div className="col s12 m4"><img className="responsive-img left-align" src={image} alt="Recipe result." /></div>
+                <p className="col s12 m8 flow-text">{description}</p>
             </div>
 
-            <div className="row valign-wrapper pink lighten-5 flow-text">
-                <p className="col s3 center-align"><strong>Difficulty :</strong> {difficulty}</p>
-                <p className="col s3 center-align"><strong>Prep Time :</strong> {preptime}mins</p>
-                <p className="col s3 center-align"><strong>Cook Time :</strong> {cooktime}mins</p>
-                <p className="col s3 center-align"><strong>Serves :</strong> {yields}</p>
+            <div className="row pink lighten-5 flow-text">
+                <p className="col s6 m3 center-align"><strong>Difficulty :</strong> {difficulty}</p>
+                <p className="col s6 m3 center-align"><strong>Prep Time :</strong> {preptime}mins</p>
+                <p className="col s6 m3 center-align"><strong>Cook Time :</strong> {cooktime}mins</p>
+                <p className="col s6 m3 center-align"><strong>Serves :</strong> {yields}</p>
             </div>
 
-            <div className="row valign-wrapper pink lighten-5 flow-text">
-                <div className="col s4 right-border center-align">
+            <div className="row pink lighten-5 flow-text">
+                <div className="col s12 m4 right-border center-align">
                     <h6 className="center-align lighter-text"><strong><u>Ingredients</u></strong></h6>
                     <ul list-style-type="none">
                         {ingredients.map((ingredient) => (
@@ -76,7 +76,7 @@ function RecipeDetailContent(props)
                         ))}
                     </ul>
                 </div>
-                <div className="col s8 left-border pad-left">
+                <div className="col s12 m8 left-border pad-left">
                     <h6 className="center-align lighter-text"><strong><u>Steps</u></strong></h6>
                     <ol>
                         {steps.map((step) => (
