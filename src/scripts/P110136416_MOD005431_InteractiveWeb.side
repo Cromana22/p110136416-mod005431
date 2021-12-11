@@ -1,0 +1,1646 @@
+{
+  "id": "9c8deefb-62be-43cf-844b-e9fd8389ae2a",
+  "version": "2.0",
+  "name": "P110136416_MOD005431_InteractiveWeb",
+  "url": "http://localhost:3000/",
+  "tests": [{
+    "id": "111106b9-91b2-47e6-a084-2b62d1ccf1e0",
+    "name": "1 - Verify Homepage",
+    "commands": [{
+      "id": "666a2357-f483-4148-ac4c-d82e11c70998",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98787696-bddf-4395-9143-43f49d92d480",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Get Baking",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5547c27f-d5cf-423b-b607-427ba0cda22a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.AppHeader",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12ff2ae9-851b-4933-b31d-3c6937000851",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.AppNav",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "470b0688-40f1-4b61-b84f-65a5c30aa29d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Home",
+      "targets": [],
+      "value": "Home"
+    }, {
+      "id": "d5d761b4-5327-4bca-8c2e-124c23d11a5a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Blog",
+      "targets": [],
+      "value": "Blog"
+    }, {
+      "id": "f07218f4-ade8-43d4-8e57-f327664efeae",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Recipes",
+      "targets": [],
+      "value": "Recipes"
+    }, {
+      "id": "d014e177-2a36-4159-b744-331bd89adc82",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.AppHomepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0071caf7-3ffb-4a68-9fb7-6b2e08426a28",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.AppPageTitle",
+      "targets": [
+        ["css=h5", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div/h5", "xpath:idRelative"],
+        ["xpath=//h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Welcome to Get Baking!')]", "xpath:innerText"]
+      ],
+      "value": "Welcome to Get Baking!"
+    }, {
+      "id": "f1947ee0-9e77-420b-b35e-6b97093ae321",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.col:nth-child(1) .card-content",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88ade04b-a554-4937-a774-5b48d9cb2d9e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.col:nth-child(2) .card-content",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95411974-4c2b-421a-8d82-62d0b4c9f51f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.col:nth-child(3) .card-content",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d1ed6e6-9397-4c86-803b-ad6fe6744a9e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.AppFooter",
+      "targets": [
+        ["css=address > b", "css:finder"],
+        ["xpath=//div[@id='no-print']/footer/div/div/address/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Get Baking')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d96c85f-a1b4-466c-9dc7-b06c1de26abf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Blog",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a5cd996-49c8-4e7d-9793-410a34dad0cb",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "812a75d9-84f4-472d-8026-fa14bfb654d6",
+      "comment": "",
+      "command": "verify",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost:3000/blog"
+    }, {
+      "id": "b0c980d6-e214-4650-844c-c7995b83f12f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Recipes",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a8b72a5-82a8-4485-8817-b12c74bd40b6",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "4d73a814-1ab1-4268-998b-603520b00213",
+      "comment": "",
+      "command": "verify",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost:3000/recipes"
+    }, {
+      "id": "74c78be4-aed7-4dc9-a426-a5c8ebc721cd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "468d50e9-235e-48ef-96b4-e6242866d7e6",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "831c3036-74b5-4ca8-a830-33e17e9b9034",
+      "comment": "",
+      "command": "verify",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost:3000/home"
+    }]
+  }, {
+    "id": "547ec64a-ce46-406a-96f2-56b7add278cd",
+    "name": "2 - Verify Blogs",
+    "commands": [{
+      "id": "f2c87916-f661-42fd-b6c3-6587a3b8c74c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0773bab8-e739-4018-9e59-a15fefe8d5b3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Blog",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7c5f23a-f1d4-4448-a642-823545a6fa7d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.AppHeader",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53a9753b-26e7-467c-a156-5e60857a54c6",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.AppNav",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "991fec64-dfb1-4994-973a-ee9be26539ef",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.AppBlog",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c1f819b-ff9d-4348-9f8f-903f8dd3f9e4",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.AppPageTitle",
+      "targets": [
+        ["css=h5", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div/h5", "xpath:idRelative"],
+        ["xpath=//h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Welcome to Get Baking!')]", "xpath:innerText"]
+      ],
+      "value": "Get Baking Blog"
+    }, {
+      "id": "729b9d70-f69e-446b-ac50-c63d27aee0bb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Blog",
+      "targets": [
+        ["linkText=Blog", "linkText"],
+        ["css=li:nth-child(2) > .deep-purple-text", "css:finder"],
+        ["xpath=//a[contains(text(),'Blog')]", "xpath:link"],
+        ["xpath=//div[@id='no-print']/nav/ul/strong/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/blog')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Blog')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "418c898f-8e29-4cd8-9884-7444ba718b5f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=ul > li:nth-child(1)",
+      "targets": [
+        ["css=ul > li:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/ul/li", "xpath:idRelative"],
+        ["xpath=//ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'2021-11-14: The Best Christmas Cookies')]", "xpath:innerText"]
+      ],
+      "value": "2021-11-14: The Best Christmas Cookies"
+    }, {
+      "id": "9b07c594-c8a6-40eb-ae92-b28033f27457",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=2021-11-14: The Best Christmas Cookies",
+      "targets": [
+        ["linkText=2021-11-14: The Best Christmas Cookies", "linkText"],
+        ["css=ul > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/blog/3')]", "xpath:href"],
+        ["xpath=//ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'2021-11-14: The Best Christmas Cookies')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b6bf91f-cc4c-4736-8e60-098607c8a1fa",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.BlogMain",
+      "targets": [
+        ["css=.BlogMain > .center-align", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'The Best Christmas Cookies')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e885c3e5-41cd-493d-9a96-7661dd19a798",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.BlogMain",
+      "targets": [
+        ["css=.BlogMain", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": "The Best Christmas Cookies\\nIt really shouldn’t surprise you that getting in the kitchen and baking up holiday treats is one of my favorite things to do once the holiday season rolls around. I mean, I run a site called 'My Baking Addiction' for a reason! But as much as I love whipping up baked goods like Chewy Mint Chocolate Chip Cookies and Easy Chocolate Bundt Cake this time of year, I also love having an arsenal of no-bake recipes to turn to. After all, sometimes my oven is in use baking something else, and sometimes I just want something that’s quick to pull together! Not to mention that no-bake recipes are so much fun to make with Elle. That’s why recipes like Chocolate Peppermint Scotcheroos, Popcorn Balls, No-Bake Cheesecake Bars, and these Peanut Butter Pretzel Bars are some of my favorites to throw together these days."
+    }, {
+      "id": "7f0a262b-221d-4d9f-943d-2542e98b610b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.responsive-img",
+      "targets": [
+        ["css=.responsive-img", "css:finder"],
+        ["xpath=//img[@alt='blog']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ea587d6-01e4-40ff-a91c-fff78028aa1c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=2021-08-07: Only The Essentials",
+      "targets": [
+        ["linkText=2021-08-07: Only The Essentials", "linkText"],
+        ["css=ul > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/blog/2')]", "xpath:href"],
+        ["xpath=//ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'2021-08-07: Only The Essentials')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a4fc47d-2bab-454e-9c04-0706106a813b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.BlogMain",
+      "targets": [
+        ["css=.BlogMain", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": "Only The Essentials\\nCranberry is such a wonderful flavor that deserves more attention all year long. I’m not complaining about it getting its due in winter, though. The flavors in these cranberry bars are similar to another copycat recipe of mine, glazed orange scones, as well as my cranberry orange bread and cranberry orange cinnamon rolls. What can I say, I love the combo of cranberry and orange!"
+    }, {
+      "id": "25e7f6f2-cac0-4809-a445-4f1ae9c3118b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.AppFooter",
+      "targets": [
+        ["css=address > b", "css:finder"],
+        ["xpath=//div[@id='no-print']/footer/div/div/address/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Get Baking')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e22fca83-a817-43ed-828d-dcde889345ca",
+    "name": "3 - Verify Recipe List",
+    "commands": [{
+      "id": "8625c395-5d4b-4b1c-8790-f19a9d9f9fce",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "391f0c32-56cc-4659-9338-4157d89a3b94",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Recipes",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7618486d-b8c4-4373-bfd5-9fd50c4bb7a3",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.AppHeader",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24f848f8-a662-4d70-bd77-492365260fa8",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.AppNav",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "051a8dce-d20b-4606-9480-50a9477ba00d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.AppRecipeList",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1037be14-b994-4b57-ac18-64bdf04cb437",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.AppPageTitle",
+      "targets": [
+        ["css=h5", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div/h5", "xpath:idRelative"],
+        ["xpath=//h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Welcome to Get Baking!')]", "xpath:innerText"]
+      ],
+      "value": "Find Great Recipes"
+    }, {
+      "id": "6086a9ae-230e-4c66-bf96-b01bd9f84ac4",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.container > strong",
+      "targets": [
+        ["css=.container > strong", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/p/strong", "xpath:idRelative"],
+        ["xpath=//p/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Have a recipe to share? Contribute here!')]", "xpath:innerText"]
+      ],
+      "value": "Have a recipe to share? Contribute here!"
+    }, {
+      "id": "dff16db6-5469-456c-9da5-6846fdd90c98",
+      "comment": "",
+      "command": "click",
+      "target": "css=.collapsible-header",
+      "targets": [
+        ["css=.collapsible-header", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/ul/li/div", "xpath:idRelative"],
+        ["xpath=//li/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94911316-3142-4297-aa41-f20a780cf473",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "name=rname",
+      "targets": [
+        ["name=rname", "name"],
+        ["css=.col:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='rname']", "xpath:attributes"],
+        ["xpath=//form[@id='searchfields']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08851b5a-0f9f-4f5c-adf4-aeb4850c0844",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "name=author",
+      "targets": [
+        ["name=author", "name"],
+        ["css=.col:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='author']", "xpath:attributes"],
+        ["xpath=//form[@id='searchfields']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "567600ef-5c77-468c-b9ba-7e22ca36b001",
+      "comment": "",
+      "command": "verifySelectedLabel",
+      "target": "name=difficulty",
+      "targets": [],
+      "value": "Any"
+    }, {
+      "id": "7bac899f-e1aa-44a8-9d85-450ba0787ca7",
+      "comment": "",
+      "command": "verifySelectedValue",
+      "target": "name=difficulty",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4a270be-f875-45af-b66e-4dac842f5c45",
+      "comment": "",
+      "command": "verifySelectedLabel",
+      "target": "name=ingredients",
+      "targets": [],
+      "value": "Any"
+    }, {
+      "id": "28de4652-deb0-49dc-aed2-6c2d158b3cf0",
+      "comment": "",
+      "command": "verifySelectedValue",
+      "target": "name=ingredients",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97b20da3-d106-4ffa-a835-ab614c330ec2",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.RecipeCard:nth-child(1) .card",
+      "targets": [
+        ["css=.RecipeCard:nth-child(1) .card", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6ec415f-95ad-493e-8d12-5f9ac2b7cc53",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.RecipeCard:nth-child(2) .card",
+      "targets": [
+        ["css=.RecipeCard:nth-child(1) .card", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b009ecf-f7f3-4223-ad35-a4be908b345b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.RecipeCard:nth-child(3) .card",
+      "targets": [
+        ["css=.RecipeCard:nth-child(1) .card", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "476ecff4-720b-46ca-b18b-67beb5fd1b24",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.RecipeCard:nth-child(4) .card",
+      "targets": [
+        ["css=.RecipeCard:nth-child(1) .card", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50228c03-6262-4432-a536-d16756bf2df2",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.RecipeCard:nth-child(5) .card",
+      "targets": [
+        ["css=.RecipeCard:nth-child(1) .card", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b220fe12-818b-423a-ae31-bd2968ece3f0",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.RecipeCard:nth-child(6) .card",
+      "targets": [
+        ["css=.RecipeCard:nth-child(1) .card", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4bfc28c3-e2f5-4fc4-85dc-80179e6b55d6",
+      "comment": "",
+      "command": "type",
+      "target": "name=rname",
+      "targets": [
+        ["name=rname", "name"],
+        ["css=.col:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='rname']", "xpath:attributes"],
+        ["xpath=//form[@id='searchfields']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Pumpkin"
+    }, {
+      "id": "4a7d5b14-2bd1-4bfb-b7b5-1cf33e38f868",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.RecipeCard:nth-child(1) .card",
+      "targets": [
+        ["css=.RecipeCard:nth-child(1) .card", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b6dfd5e-af13-4d11-b370-526d25b34d1e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.RecipeCard:nth-child(2) .card",
+      "targets": [
+        ["css=.RecipeCard:nth-child(1) .card", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ef2d42b-859e-4a86-a16c-ec7a922cc166",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "css=.RecipeCard:nth-child(3) .card",
+      "targets": [
+        ["css=.RecipeCard:nth-child(1) .card", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27cc4d2b-64ad-440b-9ee4-a9b7a8c88267",
+      "comment": "",
+      "command": "type",
+      "target": "name=rname",
+      "targets": [
+        ["name=rname", "name"],
+        ["css=.col:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='rname']", "xpath:attributes"],
+        ["xpath=//form[@id='searchfields']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17b84be8-fcc9-4deb-b771-a407f3897f6b",
+      "comment": "",
+      "command": "type",
+      "target": "name=author",
+      "targets": [
+        ["name=author", "name"],
+        ["css=.col:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='author']", "xpath:attributes"],
+        ["xpath=//form[@id='searchfields']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "BrownEyedBaker"
+    }, {
+      "id": "c9537251-95a5-4e95-96b0-e1ec7b52a4b0",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.RecipeCard:nth-child(1) .card",
+      "targets": [
+        ["css=.RecipeCard:nth-child(1) .card", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d46f10ff-46aa-4582-a30c-51824ec0db57",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.RecipeCard:nth-child(2) .card",
+      "targets": [
+        ["css=.RecipeCard:nth-child(1) .card", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11e42f81-93da-448e-9fd4-f8f8c8e13da8",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.RecipeCard:nth-child(3) .card",
+      "targets": [
+        ["css=.RecipeCard:nth-child(1) .card", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c558752-46e4-492c-a1e5-50417618d809",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "css=.RecipeCard:nth-child(4) .card",
+      "targets": [
+        ["css=.RecipeCard:nth-child(1) .card", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3504d0b4-b5ee-4b7b-8287-903dec74c627",
+      "comment": "",
+      "command": "type",
+      "target": "name=author",
+      "targets": [
+        ["name=author", "name"],
+        ["css=.col:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='author']", "xpath:attributes"],
+        ["xpath=//form[@id='searchfields']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aef64951-b1f8-4ad0-8ee8-f33ad6653a12",
+      "comment": "",
+      "command": "select",
+      "target": "name=difficulty",
+      "targets": [],
+      "value": "label=Easy"
+    }, {
+      "id": "b6037b09-e144-4170-b4ac-b10266fd8036",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.RecipeCard:nth-child(1) .card",
+      "targets": [
+        ["css=.RecipeCard:nth-child(1) .card", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ede804ed-c042-4613-853a-32f13774a32a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.RecipeCard:nth-child(2) .card",
+      "targets": [
+        ["css=.RecipeCard:nth-child(1) .card", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2d5fa8f-71ba-4d08-bfc2-56f583ef553a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.RecipeCard:nth-child(3) .card",
+      "targets": [
+        ["css=.RecipeCard:nth-child(1) .card", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e63ecf7b-b00c-43f6-b1bf-83fbd4495dc9",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "css=.RecipeCard:nth-child(4) .card",
+      "targets": [
+        ["css=.RecipeCard:nth-child(1) .card", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e377274-72e2-46c4-bf31-0c972154d32d",
+      "comment": "",
+      "command": "select",
+      "target": "name=difficulty",
+      "targets": [],
+      "value": "label=Any"
+    }, {
+      "id": "744f954e-2c08-4640-b122-493648d9fd77",
+      "comment": "",
+      "command": "select",
+      "target": "name=ingredients",
+      "targets": [],
+      "value": "label=Chocolate Chips"
+    }, {
+      "id": "75a141e9-c56f-4f5d-a373-2585037e0c72",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.RecipeCard:nth-child(1) .card",
+      "targets": [
+        ["css=.RecipeCard:nth-child(1) .card", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4827a518-e5b7-4b7c-aa7d-fb0ac5e8f0a9",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "css=.RecipeCard:nth-child(2) .card",
+      "targets": [
+        ["css=.RecipeCard:nth-child(1) .card", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f202e8a3-db68-45e9-bed3-243296cff793",
+      "comment": "",
+      "command": "select",
+      "target": "name=ingredients",
+      "targets": [],
+      "value": "label=Any"
+    }, {
+      "id": "d158848e-c3ea-4cb5-9e5e-407cebe9e3c4",
+      "comment": "",
+      "command": "click",
+      "target": "name=ingredients",
+      "targets": [
+        ["name=ingredients", "name"],
+        ["css=.col:nth-child(4) .browser-default", "css:finder"],
+        ["xpath=//select[@name='ingredients']", "xpath:attributes"],
+        ["xpath=//form[@id='searchfields']/div/div[4]/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bd3dd3a-a66f-42a3-96f5-7902d5e4e067",
+      "comment": "",
+      "command": "select",
+      "target": "name=ingredients",
+      "targets": [],
+      "value": "label=Any"
+    }, {
+      "id": "03e527d0-35d8-49aa-86ee-a7ab2c331192",
+      "comment": "",
+      "command": "click",
+      "target": "css=.RecipeCard:nth-child(1) .card",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f4e93e0-d1bf-438c-908a-7b124e412942",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "0222020c-a098-40c3-b517-be885438c5d1",
+      "comment": "",
+      "command": "verify",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost:3000/recipes/1"
+    }, {
+      "id": "7db6566e-86eb-4882-9b8c-1690fc5e8ac4",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.AppFooter",
+      "targets": [
+        ["css=address > b", "css:finder"],
+        ["xpath=//div[@id='no-print']/footer/div/div/address/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Get Baking')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2257b4b8-9ae5-4d0d-9c79-b95be7c3e64f",
+    "name": "4 - Verify Recipe Detail",
+    "commands": [{
+      "id": "b244fa84-41ad-45f6-bd38-bc71a28c8a33",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "062d49f8-2e00-4a3d-921f-8656fd628056",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Recipes",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26709d37-62c7-4d2b-b13d-f99c67046a9f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.AppHeader",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59509bfd-1e2b-4b7e-be62-8838c699309b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.AppNav",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aebe17bb-5631-4023-a7ac-25d481b62587",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.AppRecipeList",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e6e04b2-9d37-44d6-9aad-338d65cdb734",
+      "comment": "",
+      "command": "click",
+      "target": "css=.RecipeCard:nth-child(1) .centre-align",
+      "targets": [
+        ["css=.RecipeCard:nth-child(1) .centre-align", "css:finder"],
+        ["xpath=//img[@alt='alt text']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/div/div/div/a/div/div/img", "xpath:idRelative"],
+        ["xpath=//div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1babe9d9-600c-4046-b274-ee8ef6438eed",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "54a177c2-7fae-4a2c-8db4-bc98f838ddad",
+      "comment": "",
+      "command": "verify",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost:3000/recipes/1"
+    }, {
+      "id": "6d1a88e9-98bb-4878-89eb-08ce01f38e82",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "css=.AppPageTitle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c3b76c7-9a0a-440f-943c-2edf81dc8adf",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.pad-top:nth-child(1)",
+      "targets": [
+        ["css=.pad-top:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='no-print']/div[2]/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Pumpkin Coffee Cake')]", "xpath:innerText"]
+      ],
+      "value": "Pumpkin Coffee Cake"
+    }, {
+      "id": "1260650c-0ad3-4b0e-ba9e-f8cb5f8d0275",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.pink > h6",
+      "targets": [
+        ["css=.pink > h6", "css:finder"],
+        ["xpath=//div[@id='no-print']/div[2]/h6", "xpath:idRelative"],
+        ["xpath=//h6", "xpath:position"],
+        ["xpath=//h6[contains(.,'Contributed by: Jamie')]", "xpath:innerText"]
+      ],
+      "value": "Contributed by: Jamie"
+    }, {
+      "id": "aea6222a-4b5e-4430-8840-8c13168e99a2",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.responsive-img",
+      "targets": [
+        ["css=.left-align", "css:finder"],
+        ["xpath=//img[@alt='Recipe result.']", "xpath:img"],
+        ["xpath=//div[@id='no-print']/div[4]/div/img", "xpath:idRelative"],
+        ["xpath=//div[4]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25f21de7-70db-4b5c-b7ba-bf25ee8bd430",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.flow-text:nth-child(2)",
+      "targets": [
+        ["css=.flow-text:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='no-print']/div[4]/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Looking for a coffee cake full of fall flavors? You’ll definitely want to try this Pumpkin Coffee Cake! Packed with pumpkin and topped with streusel and a simple icing, this is the perfect cake for snacking on alongside a cup of coffee or chai.')]", "xpath:innerText"]
+      ],
+      "value": "Looking for a coffee cake full of fall flavors? You’ll definitely want to try this Pumpkin Coffee Cake! Packed with pumpkin and topped with streusel and a simple icing, this is the perfect cake for snacking on alongside a cup of coffee or chai."
+    }, {
+      "id": "5bc41ce0-16db-440b-904f-f756f60e0091",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.row:nth-child(5)",
+      "targets": [
+        ["css=.row:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='no-print']/div[5]", "xpath:idRelative"],
+        ["xpath=//div[5]", "xpath:position"]
+      ],
+      "value": "Difficulty : Medium\\nPrep Time : 20mins\\nCook Time : 40mins\\nServes : 15"
+    }, {
+      "id": "d4b4b369-607f-48bf-aede-2a3bae270968",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.row:nth-child(6)",
+      "targets": [
+        ["css=.row:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='no-print']/div[6]", "xpath:idRelative"],
+        ["xpath=//div[6]", "xpath:position"]
+      ],
+      "value": "Ingredients\\nEggs - 4 each\\nWhite Sugar - 335 g\\nOil - 1 tbsp\\nOil - 200 ml\\nPumpkin Puree - 450 g\\nVanilla Extract - 2 tsp\\nFlour - 400 g\\nBaking Powder - 3 tsp\\nPumpkin Spice - 1 tbsp\\nSalt - 1 tsp\\nLight Brown Sugar - 100 g\\nFlour - 100 g\\nPumpkin Spice - 0.5 tsp\\nButter - 4 tbsp\\nIcing Sugar - 100 g\\nCoffee Creamer - 3 tbsp\\nSteps\\nPreheat the oven to 350 degrees F. Grease a 13 by 9-inch baking dish with butter or nonstick cooking spray.\\nIn the bowl of a stand mixer fitted with the whisk attachment or in a large bowl with an electric mixer, combine the eggs, sugar, oil, pumpkin and vanilla until thoroughly combined.\\nWhisk together the flour, baking powder, baking soda, pumpkin pie spice and salt. Stir flour mixture into pumpkin mixture until combined.\\nPour into the prepared baking dish and spread into an even layer.\\nIn a bowl, combine the brown sugar, flour, pumpkin pie spice, and butter, and combine with a fork until it resembles coarse crumbs. Sprinkle the topping over the cake and bake until golden brown and set, 35 to 40 minutes.\\nRemove from the oven and let cool completely on a wire rack.\\nIn a bowl, combine the powdered sugar and coffee creamer until smooth. Drizzle over the cake."
+    }, {
+      "id": "f8508761-1761-4dd4-804d-99449d508178",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=ol",
+      "targets": [
+        ["css=ol", "css:finder"],
+        ["xpath=//div[@id='no-print']/div[6]/div[2]/ol", "xpath:idRelative"],
+        ["xpath=//ol", "xpath:position"]
+      ],
+      "value": "Preheat the oven to 350 degrees F. Grease a 13 by 9-inch baking dish with butter or nonstick cooking spray.\\nIn the bowl of a stand mixer fitted with the whisk attachment or in a large bowl with an electric mixer, combine the eggs, sugar, oil, pumpkin and vanilla until thoroughly combined.\\nWhisk together the flour, baking powder, baking soda, pumpkin pie spice and salt. Stir flour mixture into pumpkin mixture until combined.\\nPour into the prepared baking dish and spread into an even layer.\\nIn a bowl, combine the brown sugar, flour, pumpkin pie spice, and butter, and combine with a fork until it resembles coarse crumbs. Sprinkle the topping over the cake and bake until golden brown and set, 35 to 40 minutes.\\nRemove from the oven and let cool completely on a wire rack.\\nIn a bowl, combine the powdered sugar and coffee creamer until smooth. Drizzle over the cake."
+    }, {
+      "id": "e286c619-d4fd-4a98-8363-87b980a65fd2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "name=print",
+      "targets": [
+        ["name=print", "name"],
+        ["css=.deep-purple", "css:finder"],
+        ["xpath=//button[@name='print']", "xpath:attributes"],
+        ["xpath=//div[@id='no-print']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": "PRINT\\nprint"
+    }, {
+      "id": "2a13937a-ea0e-4612-befb-768d36a30667",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.btn:nth-child(6)",
+      "targets": [
+        ["css=.btn:nth-child(6)", "css:finder"],
+        ["xpath=//a[contains(text(),'Back')]", "xpath:link"],
+        ["xpath=//div[@id='no-print']/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/recipes')])[2]", "xpath:href"],
+        ["xpath=//div/div[2]/a", "xpath:position"]
+      ],
+      "value": "BACK"
+    }, {
+      "id": "7228713d-b025-4840-97d3-f9ef1b257b05",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.AppFooter",
+      "targets": [
+        ["css=address > b", "css:finder"],
+        ["xpath=//div[@id='no-print']/footer/div/div/address/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Get Baking')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "751d9871-5278-4884-a9ee-17905d579d33",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(6)",
+      "targets": [],
+      "value": "BACK"
+    }, {
+      "id": "3175ef55-9e6b-425e-98ad-706d234f2969",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "24cebf0d-c298-4663-a658-3836fdc0ce56",
+      "comment": "",
+      "command": "verify",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost:3000/recipes"
+    }]
+  }, {
+    "id": "98c2837c-9df1-457a-92ac-f54cd3867046",
+    "name": "5 - Verify Recipe Add",
+    "commands": [{
+      "id": "06d61e31-b7a5-46a6-9348-12b7b01ccbdf",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dba8cfea-719d-475b-9a74-683398bc18b2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Recipes",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92eeebfb-7112-4f17-bff2-a726d068e63c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.AppHeader",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1caaf16-3be0-4d33-a996-7e346a5ec2e9",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.AppNav",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e304f2b0-a1da-4a5f-86d7-3ed209b59c88",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.AppRecipeList",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e94bf66a-9d71-4d35-b4f4-293477dc0291",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contribute here!",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b471d220-4d6b-438a-ac16-891425dd974f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "1ad3edb5-d3f5-4db8-af7b-8ab718fdab79",
+      "comment": "",
+      "command": "verify",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost:3000/recipes/addRecipe"
+    }, {
+      "id": "fa7d890a-1ecc-40bc-a2a1-0441b407c49b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.AppPageTitle",
+      "targets": [
+        ["css=h5", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div/h5", "xpath:idRelative"],
+        ["xpath=//h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Welcome to Get Baking!')]", "xpath:innerText"]
+      ],
+      "value": "Contribute to our recipe collection!"
+    }, {
+      "id": "2a6ea9c2-cc45-4d8d-83ba-11a3c054ccd9",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.collapsible-body > input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Basic Cheesecake"
+    }, {
+      "id": "c38532b3-9b83-4b70-8584-609086672344",
+      "comment": "",
+      "command": "type",
+      "target": "name=rdescription",
+      "targets": [
+        ["name=rdescription", "name"],
+        ["css=.collapsible-body > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='rdescription']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "This is a basic cheesecake that is easy to make"
+    }, {
+      "id": "158ece39-9c84-4523-835d-ff98f2432d80",
+      "comment": "",
+      "command": "type",
+      "target": "name=contributor",
+      "targets": [
+        ["name=contributor", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='contributor']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li/div[2]/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "P110136416"
+    }, {
+      "id": "1190eb20-2a23-4c17-85f0-283312c2aead",
+      "comment": "",
+      "command": "type",
+      "target": "name=website",
+      "targets": [
+        ["name=website", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='website']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li/div[2]/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "https://facebook.com"
+    }, {
+      "id": "124a7776-b1af-487e-af36-7493e90e8a7d",
+      "comment": "",
+      "command": "type",
+      "target": "name=prepTime",
+      "targets": [
+        ["name=prepTime", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='prepTime']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li/div[2]/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "30"
+    }, {
+      "id": "4fa52924-071c-4317-8781-0e602e1a813a",
+      "comment": "",
+      "command": "type",
+      "target": "name=cookTime",
+      "targets": [
+        ["name=cookTime", "name"],
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='cookTime']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li/div[2]/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": "60"
+    }, {
+      "id": "047d3b75-cca6-4a75-a5be-47ebadef74c7",
+      "comment": "",
+      "command": "type",
+      "target": "name=servings",
+      "targets": [
+        ["name=servings", "name"],
+        ["css=input:nth-child(7)", "css:finder"],
+        ["xpath=//input[@name='servings']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li/div[2]/input[7]", "xpath:idRelative"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": "12"
+    }, {
+      "id": "b32091ae-a812-4fa4-ade6-ae18e5e07ab0",
+      "comment": "",
+      "command": "type",
+      "target": "name=image",
+      "targets": [
+        ["name=image", "name"],
+        ["css=.file-path", "css:finder"],
+        ["xpath=//input[@name='image']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/input", "xpath:position"]
+      ],
+      "value": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1028453_10-366e2a3.jpg?quality=90&resize=500,454"
+    }, {
+      "id": "4b2a2277-683a-4b97-bc0b-f4e101e50107",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) > .collapsible-header",
+      "targets": [
+        ["css=li:nth-child(2) > .collapsible-header", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li[2]/div", "xpath:idRelative"],
+        ["xpath=//li[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a08093e6-7fe7-437b-8eaf-ab81ece1753b",
+      "comment": "",
+      "command": "click",
+      "target": "id=ingplus",
+      "targets": [
+        ["css=.center-align:nth-child(1) .material-icons", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li[3]/div[2]/div/button/i", "xpath:idRelative"],
+        ["xpath=//li[3]/div[2]/div/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7e848c2-9747-400d-bad8-fb3e3c651702",
+      "comment": "",
+      "command": "type",
+      "target": "name=ingredient1",
+      "targets": [
+        ["name=ingredient1", "name"],
+        ["css=.left-align", "css:finder"],
+        ["xpath=//input[@name='ingredient1']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//li[2]/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Biscuit (ground)"
+    }, {
+      "id": "6a47030d-c9c4-4a98-8c84-e8af7ce83b0a",
+      "comment": "",
+      "command": "type",
+      "target": "name=num1",
+      "targets": [
+        ["name=num1", "name"],
+        ["css=.input-field > .right-align", "css:finder"],
+        ["xpath=//input[@name='num1']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li[2]/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/div[2]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "36919f44-7634-46c9-bdf1-0a17320928ff",
+      "comment": "",
+      "command": "select",
+      "target": "name=measure1",
+      "targets": [],
+      "value": "label=g"
+    }, {
+      "id": "7280755d-b54b-4119-86fb-79ce9255ec35",
+      "comment": "",
+      "command": "click",
+      "target": "id=ingplus",
+      "targets": [
+        ["css=.center-align:nth-child(1) .material-icons", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li[3]/div[2]/div/button/i", "xpath:idRelative"],
+        ["xpath=//li[3]/div[2]/div/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65d4bbd9-6c29-4bb5-9fef-1ad924cc3fb9",
+      "comment": "",
+      "command": "type",
+      "target": "name=ingredient2",
+      "targets": [
+        ["name=ingredient2", "name"],
+        ["css=.center-align:nth-child(2) .left-align", "css:finder"],
+        ["xpath=//input[@name='ingredient2']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li[2]/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Cream Cheese"
+    }, {
+      "id": "12e2aac0-a5b0-4839-91d0-872a38c07341",
+      "comment": "",
+      "command": "type",
+      "target": "name=num2",
+      "targets": [
+        ["name=num2", "name"],
+        ["css=.center-align:nth-child(2) .right-align", "css:finder"],
+        ["xpath=//input[@name='num2']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li[2]/div[2]/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "6b541c76-9f20-4131-95cf-0e9acfde74f3",
+      "comment": "",
+      "command": "select",
+      "target": "name=measure2",
+      "targets": [],
+      "value": "label=g"
+    }, {
+      "id": "48a9f37b-926f-47e5-b06c-6e8591dfa7d1",
+      "comment": "",
+      "command": "click",
+      "target": "id=ingplus",
+      "targets": [
+        ["css=.center-align:nth-child(1) .material-icons", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li[3]/div[2]/div/button/i", "xpath:idRelative"],
+        ["xpath=//li[3]/div[2]/div/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5479868c-0c87-451e-b6bc-a131ba2c2b36",
+      "comment": "",
+      "command": "type",
+      "target": "name=ingredient3",
+      "targets": [
+        ["name=ingredient3", "name"],
+        ["css=.center-align:nth-child(3) .left-align", "css:finder"],
+        ["xpath=//input[@name='ingredient3']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li[2]/div[2]/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "Double Cream"
+    }, {
+      "id": "ecab65a6-57c2-418f-b716-6251edeed7f5",
+      "comment": "",
+      "command": "type",
+      "target": "name=num3",
+      "targets": [
+        ["name=num3", "name"],
+        ["css=.center-align:nth-child(3) .right-align", "css:finder"],
+        ["xpath=//input[@name='num3']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li[2]/div[2]/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "300"
+    }, {
+      "id": "cec3a4ac-d840-44a0-ad16-168fde043c77",
+      "comment": "",
+      "command": "select",
+      "target": "name=measure3",
+      "targets": [],
+      "value": "label=ml"
+    }, {
+      "id": "7866ce1c-aa72-406b-ba32-aa4c6def9aae",
+      "comment": "",
+      "command": "click",
+      "target": "id=ingplus",
+      "targets": [
+        ["css=.center-align:nth-child(1) .material-icons", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li[3]/div[2]/div/button/i", "xpath:idRelative"],
+        ["xpath=//li[3]/div[2]/div/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70c92ea8-7784-408a-99fa-a74f63ebae65",
+      "comment": "",
+      "command": "type",
+      "target": "name=ingredient4",
+      "targets": [
+        ["name=ingredient4", "name"],
+        ["css=.center-align:nth-child(4) .left-align", "css:finder"],
+        ["xpath=//input[@name='ingredient4']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li[2]/div[2]/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "Butter"
+    }, {
+      "id": "2fdd6f74-6628-43cc-bf43-9fad4073e8ec",
+      "comment": "",
+      "command": "type",
+      "target": "name=num4",
+      "targets": [
+        ["name=num4", "name"],
+        ["css=.center-align:nth-child(4) .right-align", "css:finder"],
+        ["xpath=//input[@name='num4']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li[2]/div[2]/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "1233d710-0d54-4b8e-9cea-f4ab3d735f7c",
+      "comment": "",
+      "command": "select",
+      "target": "name=measure4",
+      "targets": [],
+      "value": "label=tbsp"
+    }, {
+      "id": "397417ac-9ec5-4218-8fe9-62ec14cba3a6",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) > .collapsible-header",
+      "targets": [
+        ["css=li:nth-child(3) > .collapsible-header", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li[3]/div", "xpath:idRelative"],
+        ["xpath=//li[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8af7dfca-d5dc-4973-ae8f-e42eb3650a28",
+      "comment": "",
+      "command": "click",
+      "target": "id=stepplus",
+      "targets": [
+        ["css=.collapsible-body > .center-align:nth-child(2) > .waves-effect", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li[2]/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'add')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae23ff75-87e4-4759-9454-1afa375ec739",
+      "comment": "",
+      "command": "type",
+      "target": "name=step1",
+      "targets": [
+        ["name=step1", "name"],
+        ["css=.center-align > input", "css:finder"],
+        ["xpath=//input[@name='step1']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//li[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Mix the butter and biscuit to make the base."
+    }, {
+      "id": "a669a707-23b0-40d4-94e4-dfb97306d160",
+      "comment": "",
+      "command": "click",
+      "target": "id=stepplus",
+      "targets": [
+        ["css=.collapsible-body > .center-align:nth-child(2) .material-icons", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li[3]/div[2]/div[2]/button/i", "xpath:idRelative"],
+        ["xpath=//div[2]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0c52ad6-d041-4efb-a661-a5456b4fd8ca",
+      "comment": "",
+      "command": "type",
+      "target": "name=step2",
+      "targets": [
+        ["name=step2", "name"],
+        ["css=.center-align:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='step2']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li[3]/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//li[3]/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Whisk the cream cheese and double cream together to create the topping."
+    }, {
+      "id": "8da502f4-ec74-4b2d-a44c-6e6cff77a18e",
+      "comment": "",
+      "command": "click",
+      "target": "id=stepplus",
+      "targets": [
+        ["css=.collapsible-body > .center-align:nth-child(2) .material-icons", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li[3]/div[2]/div[2]/button/i", "xpath:idRelative"],
+        ["xpath=//div[2]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa59f74f-dbe3-4ed1-b072-5016584fe48b",
+      "comment": "",
+      "command": "type",
+      "target": "name=step3",
+      "targets": [
+        ["name=step3", "name"],
+        ["css=.input-field:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='step3']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li[3]/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Spread the base into a tin, then cover with the topping"
+    }, {
+      "id": "6c47d0a5-425a-42ee-b042-d1fd0be60e1e",
+      "comment": "",
+      "command": "click",
+      "target": "id=stepplus",
+      "targets": [
+        ["css=.collapsible-body > .center-align:nth-child(2) .material-icons", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li[3]/div[2]/div[2]/button/i", "xpath:idRelative"],
+        ["xpath=//div[2]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9f58f27-b5ed-4d90-b757-fc5cf8b9c932",
+      "comment": "",
+      "command": "type",
+      "target": "name=step4",
+      "targets": [
+        ["name=step4", "name"],
+        ["css=.input-field:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='step4']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/ul/li[3]/div[2]/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Chill until set."
+    }, {
+      "id": "23832fb9-b96d-410c-90e3-77d7675365ec",
+      "comment": "",
+      "command": "click",
+      "target": "name=action",
+      "targets": [
+        ["name=action", "name"],
+        ["css=.center-align:nth-child(2) > .btn", "css:finder"],
+        ["xpath=//button[@name='action']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/form/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48566f14-3bb2-4e3a-ba67-feeabe918337",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=strong:nth-child(2)",
+      "targets": [
+        ["css=strong:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div/div[2]/p/strong", "xpath:idRelative"],
+        ["xpath=//p/strong", "xpath:position"]
+      ],
+      "value": "Thank you for your submission!\\nYour recipe will be listed following our review and approval process."
+    }, {
+      "id": "34d02947-1f74-4c64-8192-9077d8a89a66",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.pad-top:nth-child(1)",
+      "targets": [
+        ["css=.pad-top:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='no-print']/div[2]/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Pumpkin Coffee Cake')]", "xpath:innerText"]
+      ],
+      "value": "Basic Cheesecake"
+    }, {
+      "id": "e96a85db-f133-4496-9079-d37cb6bc4fd2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.pink > h6",
+      "targets": [
+        ["css=.pink > h6", "css:finder"],
+        ["xpath=//div[@id='no-print']/div[2]/h6", "xpath:idRelative"],
+        ["xpath=//h6", "xpath:position"],
+        ["xpath=//h6[contains(.,'Contributed by: Jamie')]", "xpath:innerText"]
+      ],
+      "value": "Contributed by: P110136416"
+    }, {
+      "id": "6b65a36e-38f9-42e8-88a8-e382cf23a15e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.responsive-img",
+      "targets": [
+        ["css=.left-align", "css:finder"],
+        ["xpath=//img[@alt='Recipe result.']", "xpath:img"],
+        ["xpath=//div[@id='no-print']/div[4]/div/img", "xpath:idRelative"],
+        ["xpath=//div[4]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4320a245-898b-47b7-a709-eb2624dcbf58",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.flow-text:nth-child(2)",
+      "targets": [
+        ["css=.flow-text:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='no-print']/div[4]/p", "xpath:idRelative"],
+        ["xpath=//div[4]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'asdfas')]", "xpath:innerText"]
+      ],
+      "value": "This is a basic cheesecake that is easy to make"
+    }, {
+      "id": "09c0985d-41c0-4a81-b216-9ecc25101233",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.row:nth-child(5)",
+      "targets": [
+        ["css=.row:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='no-print']/div[5]", "xpath:idRelative"],
+        ["xpath=//div[5]", "xpath:position"]
+      ],
+      "value": "Difficulty : Medium\\nPrep Time : 30mins\\nCook Time : 60mins\\nServes : 12"
+    }, {
+      "id": "d28ca198-6361-4f5f-9a4d-815d55e793a8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.row:nth-child(6)",
+      "targets": [
+        ["css=.row:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='no-print']/div[6]", "xpath:idRelative"],
+        ["xpath=//div[6]", "xpath:position"]
+      ],
+      "value": "Ingredients\\nBiscuit (ground) - 200 g\\nCream Cheese - 200 g\\nDouble Cream - 300 ml\\nButter - 100 tbsp\\nSteps\\nMix the butter and biscuit to make the base.\\nWhisk the cream cheese and double cream together to create the topping.\\nSpread the base into a tin, then cover with the topping\\nChill until set."
+    }, {
+      "id": "b655408d-3a83-458c-813a-efbf8f76905d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=ol",
+      "targets": [
+        ["css=ol", "css:finder"],
+        ["xpath=//div[@id='no-print']/div[6]/div[2]/ol", "xpath:idRelative"],
+        ["xpath=//ol", "xpath:position"]
+      ],
+      "value": "Mix the butter and biscuit to make the base.\\nWhisk the cream cheese and double cream together to create the topping.\\nSpread the base into a tin, then cover with the topping\\nChill until set."
+    }, {
+      "id": "7ed6d9bd-c12d-4953-81bd-305dd8a00d54",
+      "comment": "",
+      "command": "verifyText",
+      "target": "name=print",
+      "targets": [
+        ["name=print", "name"],
+        ["css=.deep-purple", "css:finder"],
+        ["xpath=//button[@name='print']", "xpath:attributes"],
+        ["xpath=//div[@id='no-print']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": "PRINT\\nprint"
+    }, {
+      "id": "51a9a8ee-3430-44d5-9da7-7409926353bb",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.btn:nth-child(6)",
+      "targets": [
+        ["css=.btn:nth-child(6)", "css:finder"],
+        ["xpath=//a[contains(text(),'Back')]", "xpath:link"],
+        ["xpath=//div[@id='no-print']/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/recipes')])[2]", "xpath:href"],
+        ["xpath=//div/div[2]/a", "xpath:position"]
+      ],
+      "value": "BACK"
+    }, {
+      "id": "653d7d30-6f3f-4964-99d5-6559a42139c3",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.AppFooter",
+      "targets": [
+        ["css=address > b", "css:finder"],
+        ["xpath=//div[@id='no-print']/footer/div/div/address/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Get Baking')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6865beb1-0f22-4d62-9292-1c0aaf0b2b65",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["111106b9-91b2-47e6-a084-2b62d1ccf1e0"]
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}
