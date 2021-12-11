@@ -1,0 +1,33 @@
+[
+{ "id": "1",
+"date": "2021-05-31",
+"title": "Appreciating The Classic Bread Roll",
+"image": "https://cdn.pixabay.com/photo/2015/09/16/20/10/dough-943245_960_720.jpg",
+"content": "While I typically don’t make a big fuss about Thanksgiving day breakfast, I’m little ahead with my Thanksgiving prep this year. So instead of us pulling out a box of cereal or packet of oatmeal on Thanksgiving morning, I thought I’d whip up a batch of Pumpkin Spice Cinnamon Rolls and these simple Pumpkin Muffins for us to enjoy with a hot cup of coffee while watching the parade. The great thing about the cinnamon rolls and these pumpkin muffins is that they both can be made the day before, so we can enjoy breakfast without a lot of prep and hand’s on time. Since I prep the majority of our Thanksgiving dinner days beforehand, I figured why not do the same for breakfast? If you were to ask me my favorite flavor in life, it would probably be pumpkin plus those fall spices that we all call pumpkin spice or pumpkin pie spice. Every year my Pumpkin Bread is one of the most popular recipes on My Baking Addiction along with my homemade pumpkin pie spice, pumpkin roll and pumpkin crunch cake. Yes, I love pumpkin. Why do you ask?"},
+
+{ "id": "2",
+"date": "2021-08-07",
+"title": "Only The Essentials",
+"image": "https://cdn.pixabay.com/photo/2021/01/01/21/56/cooking-5880136_960_720.jpg",
+"content": "Cranberry is such a wonderful flavor that deserves more attention all year long. I’m not complaining about it getting its due in winter, though. The flavors in these cranberry bars are similar to another copycat recipe of mine, glazed orange scones, as well as my cranberry orange bread and cranberry orange cinnamon rolls. What can I say, I love the combo of cranberry and orange!"},
+
+ {"id": "3",
+"date": "2021-11-14","title": "The Best Christmas Cookies",
+"image": "https://cdn.pixabay.com/photo/2019/11/25/09/02/baking-4651363_960_720.jpg",
+"content": "It really shouldn’t surprise you that getting in the kitchen and baking up holiday treats is one of my favorite things to do once the holiday season rolls around. I mean, I run a site called 'My Baking Addiction' for a reason! But as much as I love whipping up baked goods like Chewy Mint Chocolate Chip Cookies and Easy Chocolate Bundt Cake this time of year, I also love having an arsenal of no-bake recipes to turn to. After all, sometimes my oven is in use baking something else, and sometimes I just want something that’s quick to pull together! Not to mention that no-bake recipes are so much fun to make with Elle. That’s why recipes like Chocolate Peppermint Scotcheroos, Popcorn Balls, No-Bake Cheesecake Bars, and these Peanut Butter Pretzel Bars are some of my favorites to throw together these days."},
+
+ {"id": "4",
+"date": "2020-01-14","title": "Birthday Baking!",
+"image": "https://cdn.pixabay.com/photo/2020/02/29/15/20/cake-4890393_960_720.jpg",
+"content": "I must say that I have a pretty good list going with everything from Peanut Butter Blossoms and Crispy Ginger Cookies to these pretty Snowflake Sugar Cookies and classic Gingerbread Cookies. But before I head into full-on Christmas cookie mode, I decided to whip up a couple of batches of cookies that are full of festive fall flavors. Pumpkin cookies are a go-to every fall. I’ve made them even better with my favorite cookie add-ins!"},
+
+ {"id": "5",
+"date": "2021-05-10","title": "Cupcake Love",
+"image": "https://cdn.pixabay.com/photo/2020/05/01/09/13/cupcakes-5116009_960_720.jpg",
+"content": "Looking for a coffee cake full of fall flavors? You’ll definitely want to try this Pumpkin Coffee Cake! Packed with pumpkin and topped with streusel and a simple icing, this is the perfect cake for snacking on alongside a cup of coffee or chai."},
+
+ {"id": "6",
+"date": "2020-02-14","title": "Valentines Ideas",
+"image": "https://cdn.pixabay.com/photo/2015/05/07/15/08/cookie-756601_960_720.jpg",
+"content": "Streusel is a crumbly topping made with flour, one or more sugars, and butter. You can use granulated sugar, brown sugar, or a mix of both. Oats are often added, as are chopped nuts, cinnamon, or other spices."}
+]
